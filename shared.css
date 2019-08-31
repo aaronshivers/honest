@@ -43,9 +43,21 @@ body {
   text-decoration: none;
 }
 
-.navbar__toggle img {
+.navbar__icons img {
+  display: inline;
   height: 1.5rem;
   vertical-align: middle;
+}
+
+.navbar__icons a {
+  text-decoration: none;
+  color: grey;
+}
+
+.navbar__toggle {
+  cursor: pointer;
+/*  height: 1.5rem;
+  vertical-align: middle;*/
 }
 
 .navbar__dropdown {
