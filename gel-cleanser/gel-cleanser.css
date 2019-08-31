@@ -2,7 +2,7 @@
   grid-column: span 5;
 }
 
-.product img {
+.product__image {
   margin-top: 4rem;
   width: 100%;
 }
@@ -13,4 +13,22 @@
 
 .product__description {
   padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+
+  }
+  
+  .product__image {
+    grid-column: span 3;
+    /*max-width: 768px;*/
+  }
+
+  .product__info-container {
+    margin-top: 4rem;
+    grid-column: span 2;
+  }
 }
