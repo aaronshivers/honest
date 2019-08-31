@@ -1,4 +1,5 @@
 .hero {
+  grid-column: span 5;
   background: linear-gradient(to bottom, white 15%, white 5%, transparent, transparent),
     url('./images/bg.webp');
   background-size: cover;
@@ -34,7 +35,7 @@
 }
 
 .main {
-  margin: 1rem;
+  grid-column: span 5;
 }
 
 .description {
@@ -44,6 +45,8 @@
   letter-spacing: normal;
   border-bottom: 1px solid black;
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .products {
@@ -90,16 +93,34 @@
   vertical-align: middle;
 }
 
-.footer {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-}
+@media (min-width: 768px) {
 
-.footer__text a {
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  border-bottom: 1px solid white;
+  .products {
+    /*max-width: 1000px;*/
+    display: grid;
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-template-columns: repeat(6, 15%);
+    /*grid-template-rows:;*/
+    grid-column-gap: 2%;
+  }
+
+  .products__title {
+    grid-column: span 6;
+  }
+
+  .product {
+    grid-column: span 2;
+  }
+
+  .product__button {
+    /*grid-column: span 3;*/
+    /*display: block;*/
+    /*order: 44;*/
+  }
+
+  .product__price {
+    /*display: block;*/
+    /*order: 2;*/
+  }
 }

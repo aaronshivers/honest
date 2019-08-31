@@ -11,6 +11,11 @@ body {
   letter-spacing: .2rem;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -30,4 +35,19 @@ body {
 .header__toggle {
   height: 1.5rem;
   vertical-align: middle;
+}
+
+.footer {
+  grid-column: span 5;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer__text a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid white;
 }
