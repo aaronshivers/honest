@@ -24,7 +24,6 @@
   
   .product__image {
     grid-column: span 3;
-    /*max-width: 768px;*/
   }
 
   .product__info-container {
