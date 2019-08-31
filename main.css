@@ -113,15 +113,16 @@
 
 @media (min-width: 768px) {
 
+  .description__body {
+    text-align: center;
+  }
   .products {
-    /*max-width: 1000px;*/
     display: grid;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0 auto;
     grid-template-columns: repeat(6, 15%);
     grid-template-rows: 10%, 70%, 20%);
-    /*grid-template-rows:;*/
     grid-column-gap: 2%;
+    max-width: 768px;
   }
 
   .products__title {
