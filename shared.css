@@ -23,7 +23,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto, 1fr);
 }
 
 .navbar {
@@ -78,12 +79,12 @@ body {
 }
 
 .footer {
-  grid-column: span 5;
+  grid-column: span 1;
+  grid-row: span 1;
   background: black;
   color: white;
   text-align: center;
   padding: 1.5rem;
-  margin-top: 1rem;
 }
 
 .footer__text a {
