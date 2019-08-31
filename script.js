@@ -1,6 +1,7 @@
 const navbarToggle = document.querySelector('.navbar__toggle')
+const navbarDropdown = document.querySelector('.navbar__dropdown')
 
 navbarToggle.addEventListener('click', e => {
-  console.log(e.target)
+  navbarDropdown.classList.toggle('show')
 })
 

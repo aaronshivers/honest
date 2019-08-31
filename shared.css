@@ -47,6 +47,36 @@ body {
   vertical-align: middle;
 }
 
+.navbar__dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.navbar__dropdown ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__dropdown li {
+  list-style: none;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+.navbar__dropdown a {
+  text-decoration: none;
+  color: black;
+}
+
+.show {
+  display: block;
+}
+
 .footer {
   grid-column: span 5;
   background: black;
