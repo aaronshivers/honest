@@ -16,7 +16,7 @@ body {
   grid-template-columns: repeat(5, 20%);
 }
 
-.header {
+.navbar {
   width: 100%;
   position: fixed;
   background-color: white;
@@ -27,12 +27,12 @@ body {
   justify-content: space-between;
 }
 
-.header__brand {
+.navbar__brand {
   color: black;
   text-decoration: none;
 }
 
-.header__toggle {
+.navbar__toggle img {
   height: 1.5rem;
   vertical-align: middle;
 }
