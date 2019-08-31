@@ -11,6 +11,16 @@ body {
   letter-spacing: .2rem;
 }
 
+.button {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font: inherit;
+  padding: 1.1rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(5, 20%);
@@ -43,6 +53,7 @@ body {
   color: white;
   text-align: center;
   padding: 1.5rem;
+  margin-top: 1rem;
 }
 
 .footer__text a {

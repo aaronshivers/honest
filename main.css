@@ -90,13 +90,6 @@
 .product__button {
   grid-column: span 1;
   grid-row: span 1;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  font: inherit;
-  padding: 1.1rem;
-  border: 1px solid black;
-  text-align: center;
 }
 
 .product__button:hover,

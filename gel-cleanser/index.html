@@ -8,26 +8,26 @@
   <link rel="stylesheet" type="text/css" href="./gel-cleanser.css">
 </head>
 <body>
-  <div class="container">
 
-    <!-- start: navbar -->
-    <div class="navbar">
-      <a class="navbar__brand" href="../">honest</a>
-      <div class="navbar__toggle">
-        <object data="../images/bars-solid.svg" type="image/svg+xml"></object>
-      </div>
+  <!-- start: navbar -->
+  <div class="navbar">
+    <a class="navbar__brand" href="../">honest</a>
+    <div class="navbar__toggle">
+      <img src="../images/bars-solid.svg" />
     </div>
+  </div>
+
+  <div class="container">
 
     <!-- start: product -->
     <main class="product">
       <img src="../images/product-1.jpg">
-      <h1 class="product__title">gel cleanser</h1>
-      <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div class="product__info-container">
+        <h2 class="product__title">gel cleanser</h2>
+        <p class="product__description">A gentle facial cleanser that removes impurities without drying the skin.</p>
+        <a class="button product__button" href="./gel-cleanser">add to cart</a>
+        <span class="product__price">$12.99</span>
+      </div>
     </main>
 
     <!-- start: footer -->
@@ -35,5 +35,7 @@
       <p class="footer__text">created by <a href="https://aaronshivers.com">aaron shivers</a></p>
     </footer>
   </div>
+
+  <script src="../script.js"></script>
 </body>
 </html>
