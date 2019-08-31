@@ -37,7 +37,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(to bottom, white 5%, transparent, transparent),
+  background: linear-gradient(to bottom, white 15%, white 5%, transparent, transparent),
     url('./images/bg.webp');
   background-size: cover;
   background-position: center;
@@ -72,4 +72,73 @@ body {
   padding: 1rem;
 }
 
+.main {
+  margin: 1rem;
+}
 
+.description {
+  text-transform: none;
+  text-align: justify;
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.products {
+  border-bottom: 1px solid black;
+}
+
+.product {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product__description {
+  text-transform: none;
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+
+.product__button {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font: inherit;
+  padding: 1rem;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+
+.product__button:hover,
+.product__button:active {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  outline: none;
+  cursor: pointer;
+}
+
+.product__price {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer__text a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid white;
+}
