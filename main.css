@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(to bottom, white 15%, white 5%, transparent, transparent),
+  background: linear-gradient(to bottom, white 5%, transparent, transparent),
     url('./images/bg.webp');
   background-size: cover;
   background-position: center;
@@ -7,7 +7,7 @@
 
 .hero__container {
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent);
-  height: 100vh;
+  height: calc(100vh - 4rem);
   width: 100%;
   display: grid;
 }
@@ -32,11 +32,6 @@
   padding: 1rem;
 }
 
-.main {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-
 .description {
   text-transform: none;
   text-align: justify;
@@ -57,7 +52,7 @@
 }
 
 .product {
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
   padding-bottom: 1rem;
 }
 
@@ -121,7 +116,7 @@
     grid-template-columns: repeat(6, 15%);
     grid-template-rows: 10%, 70%, 20%);
     grid-column-gap: 2%;
-    max-width: 768px;
+    max-width: calc(768px - 2rem);
   }
 
   .products__title {

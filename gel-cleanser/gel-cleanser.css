@@ -1,10 +1,15 @@
+/*.navbar {
+  grid-area: navbar;
+}*/
+
+/*main {
+  grid-area: main;
+}*/
+
 .product {
-  grid-column: span 1;
-  margin-bottom: 1rem;
 }
 
 .product__image {
-  margin-top: 4rem;
   width: 100%;
 }
 
@@ -19,16 +24,15 @@
 @media (min-width: 768px) {
   .product {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 'image info';
   }
   
   .product__image {
-    grid-column: span 3;
+    grid-area: image;
   }
 
   .product__info-container {
-    margin-top: 4rem;
-    grid-column: span 2;
+    grid-area: info;
   }
 }

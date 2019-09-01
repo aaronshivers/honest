@@ -9,6 +9,18 @@ body {
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: .2rem;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: 4rem repeat(2, auto);
+  grid-template-areas: 'navbar'
+                       'main'
+                       'footer';
+}
+
+main {
+  grid-area: main;
+  margin-bottom: 1rem;
 }
 
 .button {
@@ -22,12 +34,11 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(auto, 1fr);
+
 }
 
 .navbar {
+  grid-area: navbar;
   width: 100%;
   position: fixed;
   background-color: white;
@@ -90,9 +101,9 @@ body {
   display: block;
 }
 
-.footer {
-  grid-column: span 1;
-  grid-row: span 1;
+footer {
+  grid-area: footer;
+  align-self: end;
   background: black;
   color: white;
   text-align: center;
